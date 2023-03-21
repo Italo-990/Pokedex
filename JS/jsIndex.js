@@ -72,7 +72,7 @@ requestApi('1')
 //EVENT SUBMIT
 document.querySelector('.submitPokedex').addEventListener('click',(e)=>{
     e.preventDefault()
-    requestApi(document.querySelector('.inputPokedex').value)
+    requestApi(document.querySelector('.inputPokedex').value.toLowerCase())
 })
 document.querySelector('.submitPokedex').addEventListener('touchstart',(e)=>{
     e.preventDefault()
