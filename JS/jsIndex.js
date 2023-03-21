@@ -31,6 +31,9 @@ const showScreen = (data)=>{
             <div class="statusDivDefense" style="width:calc(${data.defense}px * 2.5);"></div>
         </li>
     </ul>`
+
+//REMOVE FOCUS
+document.querySelector('.inputPokedex').blur()
 }
 const filterResponse = (response)=>{
    if(response.id >= 650){
