@@ -36,7 +36,8 @@ img{
 .mainGrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    height: 525px;
+    padding: 16px;
     width: 100%;
     align-items: center;
     justify-items: center;
@@ -106,6 +107,9 @@ img{
 }
 /*-----------------------------------------------------FIM POKEDEX-----------------------------------*/
 /*-----------------------------------------------------BASE STATUS----------------------------------*/
+.baseStatus{
+    padding: 16px;
+}
 .baseStatus ul li span{
     margin-left: 8px;
     font-style: italic;
