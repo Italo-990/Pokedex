@@ -7,12 +7,12 @@ const errorNoAnimatedImage = ()=>{
 const errorPromisse = ()=>{
     divInfoPokemon.innerHTML = `<p style="padding:16px;">Not found, try again</p>`
 }
-const showScreen = (data)=>{
+const showScreen = ({icon,image,id,attack,hp,defense})=>{
     //DIV INFO POKEMON
     divInfoPokemon.innerHTML = 
-    `<img class="pokemonImg"alt="pokemon"src="${data.image}">
-    <img class="pokemonIcon"alt="iconPokemon"src="${data.icon}">
-    <span class="pokemonName">${data.name} - ${data.id}</span>`
+    `<img class="pokemonImg"alt="pokemon"src="${image}">
+    <img class="pokemonIcon"alt="iconPokemon"src="${icon}">
+    <span class="pokemonName">${data.name} - ${id}</span>`
     //FIM DIV INFO POKEMON
     
     //BASE STATUS INFO
@@ -20,15 +20,15 @@ const showScreen = (data)=>{
     `<ul>
         <li>
             <span>Attack - ${data.attack}</span>
-            <div class="statusDivAttack" style="width:calc(${data.attack}px * 2.5);"></div>
+            <div class="statusDivAttack" style="width:calc(${attack}px * 2.5);"></div>
         </li>
         <li>
             <span>Hp - ${data.hp}</span>
-            <div class="statusDivHp" style="width:calc(${data.hp}px * 2.5);"></div>
+            <div class="statusDivHp" style="width:calc(${hp}px * 2.5);"></div>
         </li>
         <li>
             <span>Defense - ${data.defense}</span>
-            <div class="statusDivDefense" style="width:calc(${data.defense}px * 2.5);"></div>
+            <div class="statusDivDefense" style="width:calc(${defense}px * 2.5);"></div>
         </li>
     </ul>`
 
