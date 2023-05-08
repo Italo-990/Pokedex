@@ -7,27 +7,27 @@ const errorNoAnimatedImage = ()=>{
 const errorPromisse = ()=>{
     divInfoPokemon.innerHTML = `<p style="padding:16px;">Not found, try again</p>`
 }
-const showScreen = ({icon,image,id,attack,hp,defense})=>{
+const showScreen = ({icon,image,id,attack,hp,defense,name})=>{
     //DIV INFO POKEMON
     divInfoPokemon.innerHTML = 
     `<img class="pokemonImg"alt="pokemon"src="${image}">
     <img class="pokemonIcon"alt="iconPokemon"src="${icon}">
-    <span class="pokemonName">${data.name} - ${id}</span>`
+    <span class="pokemonName">${name} - ${id}</span>`
     //FIM DIV INFO POKEMON
     
     //BASE STATUS INFO
     divBaseStatus.innerHTML= 
     `<ul>
         <li>
-            <span>Attack - ${data.attack}</span>
+            <span>Attack - ${attack}</span>
             <div class="statusDivAttack" style="width:calc(${attack}px * 2.5);"></div>
         </li>
         <li>
-            <span>Hp - ${data.hp}</span>
+            <span>Hp - ${hp}</span>
             <div class="statusDivHp" style="width:calc(${hp}px * 2.5);"></div>
         </li>
         <li>
-            <span>Defense - ${data.defense}</span>
+            <span>Defense - ${defense}</span>
             <div class="statusDivDefense" style="width:calc(${defense}px * 2.5);"></div>
         </li>
     </ul>`
